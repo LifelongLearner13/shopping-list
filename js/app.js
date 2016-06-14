@@ -8,6 +8,7 @@ $(document).ready(function() {
     });
 
     // Removing items from the list
+    // event delegation
 	$(document).on("click", "fieldset button", function() {
 	    console.log("button clicked!");
 	    $(this).parent().remove();
@@ -21,6 +22,7 @@ $(document).ready(function() {
 	$(document).on( "change", "input[type='checkbox']",
     function(){
         if ($(this).is(':checked')) {
+        	$(this).next().css('text-decoration', 'line-through');
          } else if (!$(this).prop("checked")){
         	$(this).next().css('text-decoration', 'none');
         }
