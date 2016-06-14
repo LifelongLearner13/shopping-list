@@ -15,6 +15,8 @@ $(document).ready(function() {
     function(){
         if ($(this).is(':checked')) {
             $(this).next().css('text-decoration', 'line-through');
+        } else if ( $(this).not(":checked") ){
+        	$(this).next().css('text-decoration', 'none');
         }
     });
 });
