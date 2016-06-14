@@ -1,0 +1,28 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+form {
+    text-align: center;
+}
+input[type="text"] {
+    padding: 0.5rem;
+    margin: 1.5rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+
+input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
